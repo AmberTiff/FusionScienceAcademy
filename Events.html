@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="jdn.png" type="image/icon type" sizes="500x500px">
+    <link href="https://fonts.google.com/share?selection.family=Lora:ital,wght@0,400..700;1,400..700">
+	<title>Fusion Science Academy - Events</title>
+    <style>
+        :root {
+            --background-color: lavenderblush; /* Light pinkish background */
+            --text-color: #5e387c; /* Dark lavender for text */
+            --header-background: #e79ecf; /* Soft pink for header */
+            --button-background: #d291bc; /* Medium pink for buttons */
+            --button-text-color: white; /* White text for buttons */
+        }
+
+        [data-theme="dark"] {
+            --background-color: #3b2642; /* Darker lavender tone */
+            --text-color: lavenderblush; /* Light pink text */
+            --header-background: #4b3759; /* Dark pinkish-lavender header */
+            --button-background: #8f5b8d; /* Darker lavender for buttons */
+            --button-text-color: white; /* White text */
+        }
+		
+		#N {
+            list-style-type: none;
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: var(--header-background);
+            width: 100%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            z-index: 1000; 
+            height: 60px; 
+        }
+
+        #N h1 {
+            margin-left: -250px;
+            padding: 0px; 
+            color: white;
+            font-size: 1.5em; 
+        }
+
+        nav ul { 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: flex-end; 
+        }
+
+        nav ul li { 
+            margin-left: 20px; /* Space between list items */
+        }
+
+        li a { 
+            display: block; 
+            color: white; 
+            padding: 14px 16px; 
+            text-decoration: none; \
+        } 
+        
+        li a:hover:not(.active) { 
+            background-color: #906191; 
+        }
+
+        .active { 
+            background-color: #39c9ed; 
+        }
+		
+        body {
+            font-family: 'Lora';
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: var(--header-bg-color);
+            color: #5e387c;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+			 color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .event {
+            display: flex;
+            background-color: var(--event-bg-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+
+        .event img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .event-content {
+            padding: 20px;
+            width: 60%;
+        }
+
+        .event-content h2 {
+            color: var(--header-bg-color);
+            margin-bottom: 10px;
+        }
+
+        .event-content p {
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: var(--button-background);
+            color: var(--button-text-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+      
+        #theme-toggle {
+          list-style-type: none;
+	       margin-top: 520px;
+	       margin-left: 1190px;
+		   margin-right: 50px;
+	       padding: 3px;
+		   border: 0;
+		   border-radius: 50%;
+		   background-color:var(--button-background);
+           position: fixed;
+           top: 0;
+        }
+        
+        #theme-toggle:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+
+      <button id="theme-toggle" onclick="toggleTheme()"><img src="bulb-removebg-preview.png" style="height: 30px;"></button>
+
+    <nav id="N">
+	<img src="logs.png" style="height: 70px;"><h1 font-family: 'Lora'; style="margin-right: 65px;">Fusion Science Academy</h1>
+         <ul>
+                <li class="m"><a href="HCI (Finals).html">About Us</a></li>
+                <li class="m"><a href="HCI (Finals).html"">Admissions</a></li>
+                <li class="m"><a href="HCI (Finals).html">Departments</a></li>
+                <li class="m"><a href="HCI (Finals).html"">Events</a></li> 
+                <li class="m"><a href="HCI (Finals).html"">Contact Us</a></li> 
+         </ul> 
+        </nav>
+    <header>
+       <h1>Fusion Science Academy - Upcoming Events</h1>
+    </header>
+<hr>
+    <div class="container">
+        <!-- Event 1 -->
+        <div class="event">
+            <img src="tech.jpg" alt="Tech Expo">
+            <div class="event-content">
+                <h2>Tech-Tastic: The Future of Innovation Expo</h2>
+                <p>Join us for a showcase of futuristic technology innovations by our talented students. Featuring robotics, AI, and more!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event">
+            <img src="eco.jpg" alt="Eco Hero Challenge">
+            <div class="event-content">
+                <h2>Eco-Hero Challenge: Sustainability Fair</h2>
+                <p>Our students present eco-friendly solutions in a fair that promotes environmental sustainability. Workshops and competitions are open to all!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="event">
+            <img src="art.jpg" alt="Arts Festival">
+            <div class="event-content">
+                <h2>Fusion Arts Festival: Where Science Meets Creativity</h2>
+                <p>Experience the fusion of science and the arts in our annual festival. Students showcase their talents through music, art, and science projects.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", newTheme);
+
+            // Save the user's theme preference in localStorage
+            localStorage.setItem("theme", newTheme);
+        }
+
+        // Check localStorage for saved theme and apply it on page load
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+        });
+    </script>
+
+</body>
+</html>

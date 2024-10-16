@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="jdn.png" type="image/icon type" sizes="500x500px">
+	<link rel="stylesheet" href="new 1.css">
+	<link href="https://fonts.google.com/share?selection.family=Lora:ital,wght@0,400..700;1,400..700">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+    <title>Fusion Science Academy</title>
+    
+    <style>
+        /* Pink and Lavender Theme */
+        :root {
+            --background-color: lavenderblush; /* Light pinkish background */
+            --text-color: #5e387c; /* Dark lavender for text */
+            --header-background: #e79ecf; /* Soft pink for header */
+            --button-background: #d291bc; /* Medium pink for buttons */
+            --button-text-color: white; /* White text for buttons */
+        }
+
+        [data-theme="dark"] {
+            --background-color: #3b2642; /* Darker lavender tone */
+            --text-color: lavenderblush; /* Light pink text */
+            --header-background: #4b3759; /* Dark pinkish-lavender header */
+            --button-background: #8f5b8d; /* Darker lavender for buttons */
+            --button-text-color: white; /* White text */
+        }
+
+        /* General Styling using CSS variables */
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Lora';
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--header-background);
+            padding: 20px;
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        #N {
+            list-style-type: none;
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: var(--header-background);
+            width: 100%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            z-index: 1000; 
+            height: 60px; 
+        }
+
+        #N h1 {
+            margin-left: -250px;
+            padding: 0px; 
+            color: white;
+            font-size: 1.5em; 
+        }
+
+        nav ul { 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: flex-end; 
+        }
+
+        nav ul li { 
+            margin-left: 20px; /* Space between list items */
+        }
+
+        li a { 
+            display: block; 
+            color: white; 
+            padding: 14px 16px; 
+            text-decoration: none; \
+        } 
+        
+        li a:hover:not(.active) { 
+            background-color: #906191; 
+        }
+
+        .active { 
+            background-color: #39c9ed; 
+        }
+
+        .btn {
+            background-color: var(--button-background);
+            color: var(--button-text-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            background-color: var(--header-background);
+            color: var(--text-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Theme Toggle Button */
+        #theme-toggle {
+           list-style-type: none;
+	       margin-top: 520px;
+	       margin-left: 1190px;
+		   margin-right: 50px;
+	       padding: 3px;
+		   border: 0;
+		   border-radius: 50%;
+		   background-color:var(--button-background);
+           position: fixed;
+           top: 0;
+        }
+        
+        #theme-toggle:hover {
+            opacity: 0.9;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <button id="theme-toggle" onclick="toggleTheme()"><img src="bulb-removebg-preview.png" style="height: 30px;"></button>
+
+	<nav id="N">
+	<img src="logs.png" style="height: 70px;"><h1 font-family: 'Lora';>Fusion Science Academy</h1>
+         <ul>
+                <li class="m"><a href="#about">About Us</a></li>
+                <li class="m"><a href="#admissions">Admissions</a></li>
+                <li class="m"><a href="#departments">Departments</a></li>
+                <li class="m"><a href="#events">Events</a></li> 
+                <li class="m"><a href="#contact">Contact Us</a></li> 
+         </ul> 
+        </nav>
+		<br>
+		<header>
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin-top: 30px;">
+        <img src="schoool.png" alt="School Logo" class="logo" style="width: 100%;">
+    </div>
+	<header>
+<hr>
+    <main>
+
+        <section id="hero">
+            <div class="hero-content">
+			<img src="bn.jpeg" width = "500" height = "310" align = "left" style="border-radius: 5px; margin-right: 3px;"/>
+              <p id="wel" style="font-family: Times New Roman; font-size: 35px;">Welcome to Fusion Science Academy</p>
+			
+                <p style="font-size: 20px; font-family: Lora;">Empowering Students for a Brighter Future.</p>
+				<p style="font-size: 16px; margin: 0 0 0 45%; text-align: justify; font-family: Lora;">At Fusion Science Academy, we are dedicated to nurturing the next generation of innovators, thinkers, and leaders. Our mission is to ignite curiosity, foster creativity, and empower students to explore the wonders of science, technology, engineering, and mathematics. We believe in not just preparing students for the future, but in helping them shape it. Whether it's in our state-of-the-art laboratories, engaging classrooms, or collaborative projects, every student is encouraged to challenge the status quo, dream big, and make a lasting impact on the world.</p>
+                <a href="admission.html" class="btn" >Join Us Now</a>
+				<hr>
+            </div>
+        </section>
+		<br><br><br><br><br><br><br>
+   
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Our School</h2>
+                <p>Fusion Science Academy are committed to shaping the minds of tomorrow's leaders by providing a cutting-edge curriculum that fuses science, technology, engineering, arts, and mathematics (STEAM) education. Our academy thrives on fostering a nurturing and inclusive environment, where students are encouraged to explore their passions and unlock their full potential.</p>
+				<div style=" width: 48%; height: 265px; float: left; text-align: justify; border: solid 2px;"><h2 style="margin-bottom: -20px; font-size: 22px; text-align: center;">Our Mission</h2><br><p style="padding: 10px;">Our mission is to inspire, educate, and empower students to become critical thinkers and problem solvers, equipped with the knowledge and skills to succeed in a rapidly evolving world. We are dedicated to providing an education that balances academic excellence with personal growth, ensuring our students are ready to take on the challenges of the future.</p></div>
+				<div style=" width: 49%; height: 263px; float: right; margin-top: -266px; margin-left: 5000px; text-align: justify; border: solid 2px;"><h2 style="margin-bottom: -20px; font-size: 22px; text-align: center;">Our Vision</h2><br><p style="padding: 10px;">We envision a future where students from Fusion Science Academy lead with innovation, creativity, and empathy, making meaningful contributions to society. Our goal is to cultivate individuals who are not only academically successful but also ethical, socially responsible, and globally minded.</p></div>
+            </div>
+        </section>
+<br><br><br><br><br><br><br><br><br><hr>
+        <br><br>
+		<div style="width:100%;">
+		<div style=" width: 49%; height: 263px; float: right; margin-left: 5000px; text-align: justify;">
+        <section id="admissions" class="section">
+            <div class="container">
+                <h2 style="margin-top: -80px;">Admissions</h2>
+                <p>Learn more about our admissions process, including application deadlines, required documents, and more.</p>
+                <a href="admission.html" class="btn">Admissions Information</a>
+            </div>
+        </section>
+		</div>
+        <div style=" width: 48%; height: 265px; float: left; text-align: justify; margin-top: -280px;">
+        <section id="departments" class="section">
+            <div class="container">
+                <h2 style="margin-top: -60px;">Our Departments</h2>
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Technology</li>
+                    <li>Engineering</li>
+                    <li>Robotics</li>
+                    <li>Arts and Music</li>
+                </ul>
+            </div>
+        </section>
+		</div>
+		</div>
+<hr>
+        <section id="events" class="section">
+            <div class="container">
+                <h2 style="margin-top: -20px;">Upcoming Events</h2>
+                <p>Check out the exciting events happening at our school this year.</p>
+                <a href="Events.html" class="btn">See All Events</a>
+            </div>
+        </section>
+		<hr>
+    </main>
+	
+    <footer>
+        <div class="container">
+		<div style=" width: 48%; height: 260px; float: left; text-align: justify; line-height: 10px; margin-bottom: 20px;  margin-top: 20px;">		
+            <section id="contact">
+                <h3 style="margin-top: 40px;">Contact Us</h3>
+                <address>
+                    <p style="line-height: 26px;"><strong>Fusion Science Academy</strong><br>765 Xavier Street, Aurora, Rizal City, 2222<br>Email: info@fusionscienceacademy.com<br>Phone: (63) 4262-5435</p>
+                </address>
+            </section>
+			</div>
+			<div style=" width: 49%; float: right; margin-left: 5000px; margin-top: -270px; margin-bottom: 20px; text-align: center; line-height: 26px;">
+            <section id="social-media">
+                <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/">Facebook</a><br>
+                    <a href="https://www.x.com/">Twitter</a><br>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                
+            </section>
+			</div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle between light and dark themes
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", newTheme);
+
+            // Save the user's theme preference in localStorage
+            localStorage.setItem("theme", newTheme);
+        }
+
+        // Check localStorage for saved theme and apply it on page load
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+        });
+    </script>
+
+</body>
+</html>

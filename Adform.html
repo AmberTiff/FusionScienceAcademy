@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="jdn.png" type="image/icon type" sizes="500x500px">
+    <title>Fusion Science Academy - Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #5e387c;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+         input[type="submit"]{
+            background-color: #d291bc;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 18px;
+			width: 80%;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #c579a9;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            font-size: 20px;
+            color: #5e387c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fusion Science Academy</h1>
+    <h2>Admission Form</h2>
+
+    <!-- Change action attribute to link to HCI (Finals).html -->
+    <form action="HCI (Finals).html" method="GET" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <div class="section-title">Personal Information</div>
+        
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!-- Contact Information -->
+        <div class="section-title">Contact Information</div>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Home Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <!-- Academic Information -->
+        <div class="section-title">Academic Information</div>
+
+        <label for="high-school">High School Attended:</label>
+        <input type="text" id="high-school" name="high_school" required>
+
+        <label for="graduation-year">Year of Graduation:</label>
+        <input type="number" id="graduation-year" name="graduation_year" required>
+
+        <label for="gpa">GPA (Grade Point Average):</label>
+        <input type="text" id="gpa" name="gpa" required>
+
+        <label for="program">Preferred Program:</label>
+        <select id="program" name="program" required>
+            <option value="">Select</option>
+            <option value="Science">Science</option>
+            <option value="Technology">Technology</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Arts">Arts</option>
+        </select>
+
+        <!-- Document Upload -->
+        <div class="section-title">Upload Documents</div>
+
+        <label for="transcript">High School Transcript (PDF):</label>
+        <input type="file" id="transcript" name="transcript" accept=".pdf" required>
+
+        <label for="letter">Letter of Recommendation (PDF):</label>
+        <input type="file" id="letter" name="letter" accept=".pdf" required>
+
+        <center> 
+          <input type="submit" value="Submit Application"> 
+		</center> 
+    </form> 
+</body> 
+</html>
